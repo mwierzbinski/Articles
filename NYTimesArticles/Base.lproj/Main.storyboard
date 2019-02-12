@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="751.20000000000005" y="-73.313343328335833"/>
         </scene>
-        <!--Article Details View Model-->
+        <!--Article Details View Controller-->
         <scene sceneID="3r6-z6-wB7">
             <objects>
-                <viewController id="LNq-2c-SKF" customClass="ArticleDetailsViewModel" sceneMemberID="viewController">
+                <viewController id="LNq-2c-SKF" customClass="ArticleDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNF-fy-Hms">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
