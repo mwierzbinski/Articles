@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class ArticleListTableViewController: UITableViewController {
+final class ArticleListTableViewController: UITableViewController {
 
     private let viewModel: ArticleListViewModel
     private var data: [ArticleViewData]?
