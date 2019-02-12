@@ -16,4 +16,10 @@ final class ArticleListTableViewCell: UITableViewCell
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var icon: UIImageView!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        icon.layer.cornerRadius = icon.bounds.width * 0.5
+        icon.clipsToBounds = true
+    }
 }
