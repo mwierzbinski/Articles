@@ -49,9 +49,9 @@ final class ArticleDetailsViewController: UIViewController {
         abstractInfo.text = data.abtract
         section.text = data.section
         
-        viewModel?.getImageData(onComplete: { imageData in
+        viewModel?.getImageData(onComplete: { [weak self] imageData in
             guard let imageData = imageData else { return }
-            self.image.image = UIImage(data: imageData)
+            self?.image.image = UIImage(data: imageData)
         })
     }
 }
