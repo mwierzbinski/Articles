@@ -49,13 +49,14 @@ struct ArticleViewData {
     let title: String
     let writtenBy: String
     let date: String
-    //TODO: add image
+    let imageUrl: URL?
 }
 
 extension ArticleViewData {
     init(article: Article) {
         self.title = article.title
         self.writtenBy = article.byline
+        self.imageUrl = URL(string: article.firsImageUrl)
         
         let formatter = DateFormatter.articleDate
         self.date = formatter.string(from: article.publishedDate)

@@ -13,8 +13,13 @@ struct Article: Codable {
     let byline: String
     let abstract: String
     let section: String
-    let media: Media
+    let media: [Media]
     let publishedDate: Date
+    var firsImageUrl: String {
+        guard let metaData = self.media.first?.metadata?.first else { return "" }
+
+        return metaData.url
+    }
     
     private enum CodingKeys: String, CodingKey
     {
@@ -37,7 +42,4 @@ struct Media: Codable {
 
 struct MediaMetadata: Codable {
     let url: String
-    let format: String
-    let height: Int
-    let width: Int
 }

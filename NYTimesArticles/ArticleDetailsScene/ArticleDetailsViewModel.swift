@@ -14,7 +14,8 @@ final class ArticleDetailsViewModel {
     var detailsViewData: DetailsViewData {
         return DetailsViewData(title: article.title,
                                abtract: article.abstract,
-                               section: article.section)
+                               section: article.section,
+                               imageUrl: URL(string: article.firsImageUrl))
     }
     
     init(article: Article) {
@@ -28,5 +29,5 @@ struct DetailsViewData {
     let title: String
     let abtract: String
     let section: String
-    //TODO: add image
+    let imageUrl: URL?
 }
