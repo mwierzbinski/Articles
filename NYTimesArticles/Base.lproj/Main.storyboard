@@ -75,7 +75,6 @@
                                     <outlet property="icon" destination="jWa-Uj-gQN" id="wy4-kh-51C"/>
                                     <outlet property="title" destination="Vo9-m2-FMo" id="ntk-ha-vVf"/>
                                     <outlet property="writtenBy" destination="zSm-Mx-46B" id="EGL-ek-Ld2"/>
-                                    <segue destination="LNq-2c-SKF" kind="show" identifier="listToDetails" id="KjJ-0z-UCG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -85,6 +84,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New York Times" id="nqr-x6-CNX"/>
+                    <connections>
+                        <segue destination="LNq-2c-SKF" kind="show" identifier="ArticleDetailsViewController" id="dgL-xN-9nr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7a-cu-RAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +95,7 @@
         <!--Article Details View Controller-->
         <scene sceneID="3r6-z6-wB7">
             <objects>
-                <viewController id="LNq-2c-SKF" customClass="ArticleDetailsViewController" sceneMemberID="viewController">
+                <viewController id="LNq-2c-SKF" customClass="ArticleDetailsViewController" customModule="NYTimesArticles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNF-fy-Hms">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,6 +144,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DGQ-p0-0NY"/>
                     </view>
+                    <connections>
+                        <outlet property="abstractInfo" destination="0ME-mQ-1EX" id="qpR-VM-7UT"/>
+                        <outlet property="articleTitle" destination="oR6-PI-8xo" id="pZI-nr-N84"/>
+                        <outlet property="image" destination="HBf-zQ-L7t" id="OXc-v1-iBI"/>
+                        <outlet property="section" destination="fIE-5r-kZW" id="uOj-DG-eFs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xyh-uZ-wT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
