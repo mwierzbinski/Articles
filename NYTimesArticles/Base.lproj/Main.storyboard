@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C4p-Un-J2j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5ku-ps-cWO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Article List Table View Controller-->
+        <!--New York Times-->
         <scene sceneID="nBj-hT-d3B">
             <objects>
                 <tableViewController id="C4p-Un-J2j" customClass="ArticleListTableViewController" customModule="NYTimesArticles" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,6 +75,7 @@
                                     <outlet property="icon" destination="jWa-Uj-gQN" id="wy4-kh-51C"/>
                                     <outlet property="title" destination="Vo9-m2-FMo" id="ntk-ha-vVf"/>
                                     <outlet property="writtenBy" destination="zSm-Mx-46B" id="EGL-ek-Ld2"/>
+                                    <segue destination="LNq-2c-SKF" kind="show" id="KjJ-0z-UCG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -83,10 +84,11 @@
                             <outlet property="delegate" destination="C4p-Un-J2j" id="ioP-m4-qdI"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="New York Times" id="nqr-x6-CNX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7a-cu-RAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-188" y="-73.313343328335833"/>
+            <point key="canvasLocation" x="751.20000000000005" y="-73.313343328335833"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3r6-z6-wB7">
@@ -101,7 +103,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xyh-uZ-wT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="-70"/>
+            <point key="canvasLocation" x="1767.2" y="-70.614692653673174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zbY-bI-ok0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5ku-ps-cWO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xNL-CU-0D3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="C4p-Un-J2j" kind="relationship" relationship="rootViewController" id="Ris-7W-8fo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJh-VO-QKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="-73.313343328335833"/>
         </scene>
     </scenes>
 </document>
