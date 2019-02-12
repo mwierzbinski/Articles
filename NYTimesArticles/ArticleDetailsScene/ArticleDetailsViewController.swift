@@ -48,10 +48,6 @@ final class ArticleDetailsViewController: UIViewController {
         articleTitle.text = data.title
         abstractInfo.text = data.abtract
         section.text = data.section
-        
-        viewModel?.getImageData(onComplete: { [weak self] imageData in
-            guard let imageData = imageData else { return }
-            self?.image.image = UIImage(data: imageData)
-        })
+        image.sd_setImage(with: data.imageUrl, placeholderImage:nil)
     }
 }
