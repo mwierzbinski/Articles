@@ -19,13 +19,18 @@ final class ArticleListViewModel {
     weak var delegate: ArticleListViewModelDelegate?
     private let networkingApi: NetworkingService
     private var articles: [Article]?
+    private var articleIndex: Int?
+    var selectedArticle: Article {
+        
+        return articles![articleIndex!]
+    }
     
     init(networkingAPI: NetworkingService) {
         self.networkingApi = networkingAPI
     }
     
     func didSelectRow(at indexPath: IndexPath) {
-        
+        articleIndex = indexPath.row
     }
     
     func ready() {
