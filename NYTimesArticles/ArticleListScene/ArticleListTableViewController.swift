@@ -35,6 +35,17 @@ class ArticleListTableViewController: UITableViewController {
     private func setupViewModel() {
         viewModel.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == ArticleDetailsViewController.customSegueIdentifier ) {
+            
+            guard let detailsViewController = segue.destination as? ArticleDetailsViewController else {
+                return
+            }
+            
+            detailsViewController.update(with: viewModel.selectedArticle)
+        }
+    }
 }
 
 //UITableViewDataSource
@@ -64,6 +75,7 @@ extension ArticleListTableViewController {
 extension ArticleListTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.didSelectRow(at: indexPath)
+        performSegue(withIdentifier: ArticleDetailsViewController.customSegueIdentifier, sender: self)
     }
 }
 
