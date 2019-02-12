@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol ArticleListViewModelDelegate: class {
-    func articleListViewModel(_ articleViewModel: ArticleListViewModel, didReceiveArticles articles: [ArticleViewModel])
+    func articleListViewModel(_ articleViewModel: ArticleListViewModel, didReceiveArticles articles: [ArticleViewData])
     // TODO: Add fail to receive Articles
 }
 
@@ -39,19 +39,20 @@ final class ArticleListViewModel {
             guard let strongSelf = self else { return }
             
             strongSelf.articles = articles
-            let articleViewModels = articles.map { ArticleViewModel(article: $0) }
+            let articleViewModels = articles.map { ArticleViewData(article: $0) }
             strongSelf.delegate?.articleListViewModel(strongSelf, didReceiveArticles: articleViewModels)
         }
     }
 }
 
-struct ArticleViewModel {
+struct ArticleViewData {
     let title: String
     let writtenBy: String
     let date: String
+    //TODO: add image
 }
 
-extension ArticleViewModel {
+extension ArticleViewData {
     init(article: Article) {
         self.title = article.title
         self.writtenBy = article.byline

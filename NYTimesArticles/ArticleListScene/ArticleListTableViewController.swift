@@ -11,7 +11,7 @@ import UIKit
 class ArticleListTableViewController: UITableViewController {
 
     private let viewModel: ArticleListViewModel
-    private var data: [ArticleViewModel]?
+    private var data: [ArticleViewData]?
 
 // Init
     init(viewModel: ArticleListViewModel) {
@@ -68,7 +68,7 @@ extension ArticleListTableViewController {
 }
 
 extension ArticleListTableViewController : ArticleListViewModelDelegate {
-    func articleListViewModel(_ articleViewModel: ArticleListViewModel, didReceiveArticles articles: [ArticleViewModel]) {
+    func articleListViewModel(_ articleViewModel: ArticleListViewModel, didReceiveArticles articles: [ArticleViewData]) {
         data = articles
         tableView.reloadData()
     }
