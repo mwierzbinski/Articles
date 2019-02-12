@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ArticleListTableViewController: UITableViewController {
 
@@ -65,7 +66,7 @@ extension ArticleListTableViewController {
         cell.title.text = articleViewModel.title
         cell.writtenBy.text = articleViewModel.writtenBy
         cell.date.text = articleViewModel.date
-        // TODO: Image
+        cell.icon.sd_setImage(with: articleViewModel.imageUrl, placeholderImage:nil)
         
         return cell
     }
