@@ -28,7 +28,7 @@ final class ArticleDetailsViewController: UIViewController {
     
     private var viewModel: ArticleDetailsViewModel?
     private var data: DetailsViewData?
-        
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -48,5 +48,10 @@ final class ArticleDetailsViewController: UIViewController {
         articleTitle.text = data.title
         abstractInfo.text = data.abtract
         section.text = data.section
+        
+        viewModel?.getImageData(onComplete: { imageData in
+            guard let imageData = imageData else { return }
+            self.image.image = UIImage(data: imageData)
+        })
     }
 }

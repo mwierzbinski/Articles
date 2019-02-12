@@ -22,7 +22,17 @@ final class ArticleDetailsViewModel {
         self.article = article
     }
     
-    
+    func getImageData(onComplete: @escaping (Data?)->())
+    {
+        guard let imageUrl = detailsViewData.imageUrl else { return }
+        
+        DispatchQueue.global().async {
+            let imageData = try? Data(contentsOf: imageUrl)
+            DispatchQueue.main.async {
+                onComplete(imageData)
+            }
+        }
+    }
 }
 
 struct DetailsViewData {
