@@ -24,6 +24,7 @@
 		904444592212CD85003E609E /* ArticleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904444572212CD85003E609E /* ArticleDetailsViewModel.swift */; };
 		9044445A2212CEDA003E609E /* ArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044441E22122526003E609E /* ArticleListTableViewController.swift */; };
 		9044445C2212D3CD003E609E /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044445B2212D3CD003E609E /* ArticleListTableViewCell.swift */; };
+		9044445E22131D7F003E609E /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044445D22131D7F003E609E /* ArticleDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		904444542212CD37003E609E /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		904444572212CD85003E609E /* ArticleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewModel.swift; sourceTree = "<group>"; };
 		9044445B2212D3CD003E609E /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
+		9044445D22131D7F003E609E /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				904444572212CD85003E609E /* ArticleDetailsViewModel.swift */,
+				9044445D22131D7F003E609E /* ArticleDetailsViewController.swift */,
 			);
 			path = ArticleDetailsScene;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				9044441D22122526003E609E /* AppDelegate.swift in Sources */,
 				904444582212CD85003E609E /* ArticleDetailsViewModel.swift in Sources */,
 				904444552212CD37003E609E /* ArticleListViewModel.swift in Sources */,
+				9044445E22131D7F003E609E /* ArticleDetailsViewController.swift in Sources */,
 				9044445C2212D3CD003E609E /* ArticleListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
