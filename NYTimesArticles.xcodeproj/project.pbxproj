@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9044441D22122526003E609E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044441C22122526003E609E /* AppDelegate.swift */; };
-		9044441F22122526003E609E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044441E22122526003E609E /* ViewController.swift */; };
+		9044441F22122526003E609E /* ArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044441E22122526003E609E /* ArticleListTableViewController.swift */; };
 		9044442222122526003E609E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9044442022122526003E609E /* Main.storyboard */; };
 		9044442422122527003E609E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9044442322122527003E609E /* Assets.xcassets */; };
 		9044442722122527003E609E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9044442522122527003E609E /* LaunchScreen.storyboard */; };
 		9044443222122527003E609E /* NYTimesArticlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044443122122527003E609E /* NYTimesArticlesTests.swift */; };
 		9044443D22122527003E609E /* NYTimesArticlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044443C22122527003E609E /* NYTimesArticlesUITests.swift */; };
+		9044444C221227DC003E609E /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044444B221227DC003E609E /* NetworkingAPI.swift */; };
+		9044444D221227DC003E609E /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044444B221227DC003E609E /* NetworkingAPI.swift */; };
+		90444450221236A1003E609E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044444F221236A1003E609E /* Article.swift */; };
+		90444451221236A1003E609E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044444F221236A1003E609E /* Article.swift */; };
+		904444552212CD37003E609E /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904444542212CD37003E609E /* ArticleListViewModel.swift */; };
+		904444562212CD37003E609E /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904444542212CD37003E609E /* ArticleListViewModel.swift */; };
+		904444582212CD85003E609E /* ArticleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904444572212CD85003E609E /* ArticleDetailsViewModel.swift */; };
+		904444592212CD85003E609E /* ArticleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904444572212CD85003E609E /* ArticleDetailsViewModel.swift */; };
+		9044445A2212CEDA003E609E /* ArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044441E22122526003E609E /* ArticleListTableViewController.swift */; };
+		9044445C2212D3CD003E609E /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044445B2212D3CD003E609E /* ArticleListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		9044441922122526003E609E /* NYTimesArticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesArticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9044441C22122526003E609E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9044441E22122526003E609E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9044441E22122526003E609E /* ArticleListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewController.swift; sourceTree = "<group>"; };
 		9044442122122526003E609E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9044442322122527003E609E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9044442622122527003E609E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,11 @@
 		9044443822122527003E609E /* NYTimesArticlesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesArticlesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9044443C22122527003E609E /* NYTimesArticlesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesArticlesUITests.swift; sourceTree = "<group>"; };
 		9044443E22122527003E609E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9044444B221227DC003E609E /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
+		9044444F221236A1003E609E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		904444542212CD37003E609E /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		904444572212CD85003E609E /* ArticleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewModel.swift; sourceTree = "<group>"; };
+		9044445B2212D3CD003E609E /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +112,11 @@
 		9044441B22122526003E609E /* NYTimesArticles */ = {
 			isa = PBXGroup;
 			children = (
+				904444532212CC26003E609E /* ArticleDetailsScene */,
+				904444522212CC1B003E609E /* ArticleListScene */,
+				9044444E22123692003E609E /* Model */,
+				9044444A221227BB003E609E /* Networking */,
 				9044441C22122526003E609E /* AppDelegate.swift */,
-				9044441E22122526003E609E /* ViewController.swift */,
 				9044442022122526003E609E /* Main.storyboard */,
 				9044442322122527003E609E /* Assets.xcassets */,
 				9044442522122527003E609E /* LaunchScreen.storyboard */,
@@ -123,6 +141,40 @@
 				9044443E22122527003E609E /* Info.plist */,
 			);
 			path = NYTimesArticlesUITests;
+			sourceTree = "<group>";
+		};
+		9044444A221227BB003E609E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9044444B221227DC003E609E /* NetworkingAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9044444E22123692003E609E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9044444F221236A1003E609E /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		904444522212CC1B003E609E /* ArticleListScene */ = {
+			isa = PBXGroup;
+			children = (
+				9044441E22122526003E609E /* ArticleListTableViewController.swift */,
+				904444542212CD37003E609E /* ArticleListViewModel.swift */,
+				9044445B2212D3CD003E609E /* ArticleListTableViewCell.swift */,
+			);
+			path = ArticleListScene;
+			sourceTree = "<group>";
+		};
+		904444532212CC26003E609E /* ArticleDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				904444572212CD85003E609E /* ArticleDetailsViewModel.swift */,
+			);
+			path = ArticleDetailsScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9044441F22122526003E609E /* ViewController.swift in Sources */,
+				90444450221236A1003E609E /* Article.swift in Sources */,
+				9044441F22122526003E609E /* ArticleListTableViewController.swift in Sources */,
+				9044444C221227DC003E609E /* NetworkingAPI.swift in Sources */,
 				9044441D22122526003E609E /* AppDelegate.swift in Sources */,
+				904444582212CD85003E609E /* ArticleDetailsViewModel.swift in Sources */,
+				904444552212CD37003E609E /* ArticleListViewModel.swift in Sources */,
+				9044445C2212D3CD003E609E /* ArticleListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9044445A2212CEDA003E609E /* ArticleListTableViewController.swift in Sources */,
+				9044444D221227DC003E609E /* NetworkingAPI.swift in Sources */,
+				904444592212CD85003E609E /* ArticleDetailsViewModel.swift in Sources */,
+				904444562212CD37003E609E /* ArticleListViewModel.swift in Sources */,
 				9044443222122527003E609E /* NYTimesArticlesTests.swift in Sources */,
+				90444451221236A1003E609E /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
