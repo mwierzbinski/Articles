@@ -33,17 +33,20 @@ final class ArticleDetailsViewController: UIViewController {
         super.init(coder: aDecoder)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        guard let data = data else { return }
-        articleTitle.text = data.title
-        abstractInfo.text = data.abtract
-        section.text = data.section
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
     }
     
     func update(with article: Article) {
         viewModel = ArticleDetailsViewModel(article: article)
         data = viewModel?.detailsViewData
+    }
+    
+    func setupView() {
+        guard let data = data else { return }
+        articleTitle.text = data.title
+        abstractInfo.text = data.abtract
+        section.text = data.section
     }
 }
